@@ -10,5 +10,7 @@ RUN apk add --no-cache \
     libjpeg-turbo-dev \
     libpng-dev \
     make \
-    nasm
+    nasm \
+    curl
+
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash
