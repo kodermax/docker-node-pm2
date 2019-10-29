@@ -1,4 +1,4 @@
-FROM keymetrics/pm2:10-alpine
+FROM node:latest
 LABEL name="node-pm2"
 
 RUN apk add --no-cache \
@@ -14,3 +14,4 @@ RUN apk add --no-cache \
     curl
 
 RUN curl -o- -L https://yarnpkg.com/install.sh | bash
+RUN npm install pm2 -g
