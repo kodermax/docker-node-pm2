@@ -1,4 +1,4 @@
-FROM node:current-alpine
+FROM node:alpine
 LABEL name="node-pm2"
 
 RUN apk add --no-cache \
